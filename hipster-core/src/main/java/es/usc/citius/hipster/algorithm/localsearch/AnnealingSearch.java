@@ -55,9 +55,9 @@ import es.usc.citius.hipster.model.function.NodeExpander;
  */
 public class AnnealingSearch<A, S, N extends HeuristicNode<A, S, Double, N>> extends Algorithm<A, S, N> {
 
-	static final private Double DEFAULT_ALPHA = 0.9;
-	static final private Double DEFAULT_MIN_TEMP = 0.00001;
-	static final private Double START_TEMP = 1.;
+	private static final Double DEFAULT_ALPHA = 0.9;
+	private static final Double DEFAULT_MIN_TEMP = 0.00001;
+	private static final Double START_TEMP = 1.;
 
 	private N initialNode;
 	private Double alpha;
@@ -201,3 +201,4 @@ public class AnnealingSearch<A, S, N extends HeuristicNode<A, S, Double, N>> ext
 		N estimate(N node, NodeExpander<A, S, N> nodeExpander);
 	}
 }
+
