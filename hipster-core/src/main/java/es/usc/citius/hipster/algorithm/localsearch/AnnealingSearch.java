@@ -125,7 +125,7 @@ public class AnnealingSearch<A, S, N extends HeuristicNode<A, S, Double, N>> ext
 
 	@Override
 	public ASIterator iterator() {
-		// TODO Auto-generated method stub
+		
 		return new ASIterator();
 	}
 
@@ -201,4 +201,5 @@ public class AnnealingSearch<A, S, N extends HeuristicNode<A, S, Double, N>> ext
 		N estimate(N node, NodeExpander<A, S, N> nodeExpander);
 	}
 }
+
 
